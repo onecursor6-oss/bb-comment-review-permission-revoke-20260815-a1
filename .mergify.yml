@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: BB comment-review permission boundary merge
+    conditions:
+      - title = BB comment review permission gate canary
+      - commented-reviews-by = onecursor6-oss
+    actions:
+      merge:
+        method: merge
